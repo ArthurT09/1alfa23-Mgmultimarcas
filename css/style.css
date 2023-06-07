@@ -63,6 +63,7 @@ nav.menu ul li a{
         padding: 10px 30px;
         border-radius: 25px;
         margin-top: 20px;
+        text-align: center;
     }
 
 .financiamento {
@@ -219,11 +220,121 @@ width: 500px;
 .clear {
     clear: both;
 }
-
+.dropdown{
+    display: none;
+}
 /* SCREEN 480PX */
-@media (max-widht:480px) {
-    
-     .contato{
+ 
+@media (max-width: 1300px) {
+    .dropdown{
+        display: block;
+        text-align: center;
+        background: #ffda1f;
+    }
+    .dropdown a{
+        color: #000;
+        line-height: 30px;
+    }
+    .dropdown img{
+        margin-top: 20px;
+     }
+     .dropdown i{
+        font-size: 35px;
+     }
+     #header{
         display: none!important;
     }
+    .none, nav.menu, #logotipo{
+        display: none;
+    }
+   
+    section{
+        width: 100%;
+    }
+  
+    #header{
+        padding: 20px;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .marcas ul li{
+        width: 15%;
+    }
+    .item{
+        width: 97%;
+    }
+    .botao a{
+        font-size: 14px;
+    }
+    .depoimentos .item{
+        width: 60%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .marcas ul li{
+        width: 35%;
+        text-align: center;
+    }
+    .item{
+        width: 30%;
+        align-items: center;
+    }
+    footer .item{
+        width: 60%;
+    }
+    section{
+        width: calc(100% - 100px);
+    }
+    ul {
+        text-align: center;
+    }
+    .faleconosco.div-50{
+        width: 100%;
+}
+    header section {
+        width: 100%;
+    }
+    .faleconosco textarea {
+        width: 100%;
+        max-width: 500px;
+}
+    .iframe {
+        width: 100%;
+        max-width: 600px;
+    }
+    .faleconosco {
+        text-align: center;
+    }
+  
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: calc(100% - 100px);
+        padding: 10px 0;
+    }
+    .div-50 {
+        width: 100%;
+    }
+    .faleconosco textarea {
+        width: 100%;
+        max-width: 500px;
+}
+    .sobre h3 {
+        text-align: center;
+    }
+    .iframe {
+        width: 100%;
+        max-width: 600px;
+    }
+    .faleconosco {
+        text-align: center;
+    }
+
 }
